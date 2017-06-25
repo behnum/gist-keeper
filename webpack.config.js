@@ -25,8 +25,15 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.ProvidePlugin ({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
-      "title": "Webpack Starter",
+      "title": "Gist Keeper",
+      "files": {
+        "js": [ "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ] // FIXME: Test it
+      },
       minify: {
         collapseWhitespace: true
       },

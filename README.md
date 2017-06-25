@@ -10,6 +10,7 @@ Includes
 - html-webpack-plugin
 - css-loader
 - style-loader
+- jQuery (as a dependency for Bootstrap only)
 
 Installation
 ---------------

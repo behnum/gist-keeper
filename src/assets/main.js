@@ -1,3 +1,4 @@
 require("./style.css");
+require("jquery");
 
-alert(2000);
+alert(1);
