@@ -11,15 +11,45 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <h1>Gist Keeper</h1>
+  <div class="container">
+    <div class="header clearfix">
+      <h3 class="text-muted">Gist Keeper</h3>
+    </div>
+
+    <div class="jumbotron">
+      <h1>Save Gist</h1>
+
+      <form id="gistForm">
+        <div class="form-group">
+          <input type="text" class="form-control" id="txtInput">
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="btn btn-lg btn-success" value="Save Gist">
+        </div>
+
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Saved Gists</h2>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+
+  </div>
+  <!-- /container -->
+
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
