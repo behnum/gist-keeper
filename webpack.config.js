@@ -31,9 +31,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       "title": "Gist Keeper",
-      "files": {
-        "js": [ "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ] // FIXME: Test it
-      },
       minify: {
         collapseWhitespace: true
       },
