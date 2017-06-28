@@ -42,6 +42,9 @@ function saveGist(e) {
     updateView();
 
   }
+
+  // clean the input
+  document.getElementById("txtInput").value = "";
 }
 
 function updateView() {
