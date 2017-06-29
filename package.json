@@ -21,15 +21,10 @@
   },
   "homepage": "https://github.com/behnum/gist-keeper#readme",
   "devDependencies": {
-    "css-loader": "^0.28.4",
-    "html-webpack-plugin": "^2.29.0",
-    "react-scripts": "^1.0.9",
-    "style-loader": "^0.18.2",
-    "webpack-dev-server": "^2.5.0"
+    "react-scripts": "^1.0.9"
   },
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "webpack": "^3.0.0"
+    "react-dom": "^15.6.1"
   }
 }
