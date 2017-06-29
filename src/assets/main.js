@@ -17,18 +17,20 @@ function saveGist(e) {
 
   var today = new Date(); // FIXME: Pretty dates
   var gist = {
-    "txt": gistInput,
-    "date": today
+    txt: gistInput,
+    date: today
   };
 
   var gists = [];
 
   gists.push(gist);
 
-  if (!localStorage.getItem("gists")) { // First time init
+  if (!localStorage.getItem("gists")) {
+    // First time init
     localStorage.setItem("gists", JSON.stringify(gists));
     updateView();
-  } else { // Already exists
+  } else {
+    // Already exists
     // Load gists
     var currentGists = JSON.parse(localStorage.getItem("gists"));
 
@@ -40,7 +42,6 @@ function saveGist(e) {
 
     // Update View
     updateView();
-
   }
 
   // clean the input
@@ -48,18 +49,17 @@ function saveGist(e) {
 }
 
 function updateView() {
-
-  if (localStorage.getItem("gists")) { // If exists
+  if (localStorage.getItem("gists")) {
+    // If exists
     var gistsContainer = document.getElementById("gistsContainer");
-    gistsContainer.innerHTML = '';
-    
+    gistsContainer.innerHTML = "";
+
     var gistsCount = document.getElementById("gistsCount");
     gistsCount.innerHTML = JSON.parse(localStorage.getItem("gists")).length;
 
-
     var gists = JSON.parse(localStorage.getItem("gists"));
 
-    for (i = 0; i < gists.length; i++) {
+    for (var i = 0; i < gists.length; i++) {
       gistsContainer.innerHTML += gists[i].date + "<hr>";
       gistsContainer.innerHTML += gists[i].txt + "<br><br>";
 
@@ -67,4 +67,3 @@ function updateView() {
     }
   }
 }
-
