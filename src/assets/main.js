@@ -59,9 +59,10 @@ function updateView() {
 
     var gists = JSON.parse(localStorage.getItem("gists"));
 
-    for (var i = 0; i < gists.length; i++) {
-      gistsContainer.innerHTML += gists[i].date + "<hr>";
-      gistsContainer.innerHTML += gists[i].txt + "<br><br>";
+    for (var i = gists.length - 1; i >= 0; i--) {
+      gistsContainer.innerHTML +=
+        "<b>Date: </b><i>" + gists[i].date + "</i><br>";
+      gistsContainer.innerHTML += gists[i].txt + "<br><hr>";
 
       // TODO: Add Remove Button
     }
